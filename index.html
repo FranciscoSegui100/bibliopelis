@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblio Pelis</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <header id="header">
+        <h1 class="logo"><a href="./index.html">
+            <img src="./img/bibliopelis.jpg" alt="logo"></h1>
+        </a>
+    </header>
+    
+    <div class="quever">
+        <input type="button" value="Que Ver" id="queVer">
+    </div>
+    <div id="filtros">
+        <ul class="ul">
+            <li class="l1 Cards">Categorías</li>
+            <input type="button" value="terror" class="filtrarPorCategoria" >
+            <input type="button" value="suspenso" class="filtrarPorCategoria">
+            <input type="button" value="infantil" class="filtrarPorCategoria">
+            <input type="button" value="drama" class="filtrarPorCategoria">
+            <input type="button" value="comedia" class="filtrarPorCategoria">
+            <li class="l2">Plataforma</li>
+            <input type="button" value="Netflix" class="filtrarPorPlataforma" >
+            <input type="button" value="Disney Plus" class="filtrarPorPlataforma">
+            <input type="button" value="Proximas Peliculas" id="proxPelis">
+        </ul>
+    </div>
+    <div id="ultimaPeli"></div>
+    <div id="peliculas"></div>
+    <div id="filter">
+        <div id="filtrado"></div>
+    </div>
+    <div id="ProximasPeliculas"></div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>

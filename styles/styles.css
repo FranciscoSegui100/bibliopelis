@@ -1,0 +1,282 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#body {
+  background-color: #293241;
+}
+
+#body #header {
+  padding: 40px;
+  border-bottom: solid #EE6C4D;
+}
+
+#body .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#body .quever {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#body .quever #queVer {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  background-color: #EE6C4D;
+  color: #E0FBFC;
+  font-size: 35px;
+  font-family: 'Yellowtail', cursive;
+}
+
+#body .quever a {
+  text-decoration: none;
+}
+
+#body #filtrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #E0FBFC;
+  font-family: 'Arima', cursive;
+}
+
+#body #filtros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: #3D5A80;
+  list-style: none;
+  padding: 10px;
+}
+
+#body #filtros .ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+#body #filtros .ul .l1, #body #filtros .ul .l2, #body #filtros .ul .l3, #body #filtros .ul .l4 {
+  background-color: #EE6C4D;
+  padding: 5px;
+  border-radius: 25px;
+  color: #3D5A80;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#body #filtros .ul .l1:hover, #body #filtros .ul .l2:hover, #body #filtros .ul .l3:hover, #body #filtros .ul .l4:hover {
+  background-color: #293241;
+}
+
+#body #filtros .ul a {
+  list-style: none;
+  text-decoration: none;
+  color: #E0FBFC;
+}
+
+#body #peliculas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  margin-top: 20px;
+  color: #E0FBFC;
+  font-family: 'Arima', cursive;
+  /*.paramount{
+        margin-top: 10px;
+    }
+    .HBO{
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+    .netflix{
+        margin-top: 10px;
+    }
+    .prime-video{
+        margin-top: 10px;
+    }*/
+}
+
+#body #peliculas .img1 {
+  border-radius: 15px;
+}
+
+#body #peliculas .peli1, #body #peliculas #div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EE6C4D;
+  width: 250px;
+  height: auto;
+  line-height: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#body #peliculas .peli1 .h3, #body #peliculas #div .h3 {
+  font-family: 'Gulzar', serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#body #peliculas .plataformas {
+  text-align: center;
+  background-color: #F4A28D;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#body #peliculas .plataformas .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #EE6C4D;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#body #filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  color: #E0FBFC;
+  margin-top: -100px;
+  font-family: 'Arima', cursive;
+}
+
+#body .peli1, #body #div {
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  color: #E0FBFC;
+  font-family: 'Arima', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EE6C4D;
+  width: 250px;
+  height: auto;
+  line-height: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+#body .peli1 .id, #body #div .id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #EE6C4D;
+  border-radius: 10px;
+  padding: 5px;
+  color: #E0FBFC;
+}
+
+#body .peli1 .idPP, #body #div .idPP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #EE6C4D;
+  border-radius: 10px;
+  padding: 5px;
+  color: #E0FBFC;
+}
+
+#body .peli1 .img1, #body #div .img1 {
+  border-radius: 15px;
+}
+
+#body .peli1 .plataformas, #body #div .plataformas {
+  text-align: center;
+  background-color: #F4A28D;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#body #ultimaPeli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EE6C4D;
+  margin-top: 20px;
+}
+
+#body #ultimaPeli a {
+  text-decoration: none;
+  color: #293241;
+}
+/*# sourceMappingURL=styles.css.map */
