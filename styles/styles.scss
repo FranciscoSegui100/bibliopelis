@@ -20,6 +20,7 @@
         #queVer{
             text-align: center;
             margin-top: 10px;
+            margin-bottom: 30px;
             padding: 10px;
           border-radius: 15px;
           font-size: 20px;
@@ -49,7 +50,11 @@
             background-color: #3D5A80;
             list-style: none;
             padding: 10px;
+            margin-top: 40px;
             .ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 list-style: none;
                 text-decoration: none;
                 .l1{
@@ -60,12 +65,9 @@
                     text-align: center;
                     margin-bottom: 10px;
                 }
-                .l1:hover{
-                    background-color: #293241;
-                }
-                
                 .l2{
                     @extend .l1;
+                    margin-top: 10px;
                 }
                 .l3{
                     @extend .l1;
@@ -73,8 +75,46 @@
                 .l4{
                     @extend .l1;
                 }
-                
+                #proxPelis{
+                    background-color: #EE6C4D;
+                    padding: 5px;
+                    border-radius: 25px ;
+                    color: #3D5A80;
+                    text-align: center;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                #proxPelis:hover{
+                    color: #EE6C4D;
+                    background-color: #293241
+                }
+                .filtrarPorCategoria{
+                    background-color: #EE6C4D;
+                    padding: 5px;
+                    border-radius: 25px ;
+                    color: #3D5A80;
+                    text-align: center;
+                    border: none;
+                }
+                .filtrarPorCategoria:hover{
+                    color: #EE6C4D;
+                    background-color: #293241
+                }
+                .filtrarPorPlataforma{
+                    background-color: #EE6C4D;
+                    padding: 5px;
+                    border-radius: 25px ;
+                    color: #3D5A80;
+                    text-align: center;
+                    border: none;
+                }
+                .filtrarPorPlataforma:hover{
+                    color: #EE6C4D;
+                    background-color: #293241
+                }
             }
+            
             .ul a{
                 list-style: none;
                 text-decoration: none;
@@ -86,10 +126,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
-        padding: 15px;
-        margin-top: 20px;
+        margin-top: -42px;
         color: #E0FBFC;
+        margin-left: 75px;
         font-family: 'Arima', cursive;
             .img1{
             border-radius: 15px;
@@ -148,14 +187,13 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
-        padding: 15px;
         color: #E0FBFC;
         margin-top: -100px;
         font-family: 'Arima', cursive;
 }   
 .peli1{
-    padding: 15px;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-left: 15px;
     text-align: center;
     color: #E0FBFC;
     font-family: 'Arima', cursive;
@@ -198,6 +236,16 @@
         padding: 5px;
         margin-top: 10px;
     }
+}
+#ProximasPeliculas{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        color: #E0FBFC;
+        margin-top: -20px;
+        font-family: 'Arima', cursive;
+        margin-left: -80px;
 }
 #ultimaPeli{
     display: flex;

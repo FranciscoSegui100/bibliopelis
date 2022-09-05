@@ -35,6 +35,7 @@
 #body .quever #queVer {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 30px;
   padding: 10px;
   border-radius: 15px;
   font-size: 20px;
@@ -74,9 +75,18 @@
   background-color: #3D5A80;
   list-style: none;
   padding: 10px;
+  margin-top: 40px;
 }
 
 #body #filtros .ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
   list-style: none;
   text-decoration: none;
 }
@@ -90,7 +100,51 @@
   margin-bottom: 10px;
 }
 
-#body #filtros .ul .l1:hover, #body #filtros .ul .l2:hover, #body #filtros .ul .l3:hover, #body #filtros .ul .l4:hover {
+#body #filtros .ul .l2 {
+  margin-top: 10px;
+}
+
+#body #filtros .ul #proxPelis {
+  background-color: #EE6C4D;
+  padding: 5px;
+  border-radius: 25px;
+  color: #3D5A80;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#body #filtros .ul #proxPelis:hover {
+  color: #EE6C4D;
+  background-color: #293241;
+}
+
+#body #filtros .ul .filtrarPorCategoria {
+  background-color: #EE6C4D;
+  padding: 5px;
+  border-radius: 25px;
+  color: #3D5A80;
+  text-align: center;
+  border: none;
+}
+
+#body #filtros .ul .filtrarPorCategoria:hover {
+  color: #EE6C4D;
+  background-color: #293241;
+}
+
+#body #filtros .ul .filtrarPorPlataforma {
+  background-color: #EE6C4D;
+  padding: 5px;
+  border-radius: 25px;
+  color: #3D5A80;
+  text-align: center;
+  border: none;
+}
+
+#body #filtros .ul .filtrarPorPlataforma:hover {
+  color: #EE6C4D;
   background-color: #293241;
 }
 
@@ -109,10 +163,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
-  padding: 15px;
-  margin-top: 20px;
+  margin-top: -42px;
   color: #E0FBFC;
+  margin-left: 75px;
   font-family: 'Arima', cursive;
   /*.paramount{
         margin-top: 10px;
@@ -189,15 +242,14 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 15px;
-  padding: 15px;
   color: #E0FBFC;
   margin-top: -100px;
   font-family: 'Arima', cursive;
 }
 
 #body .peli1, #body #div {
-  padding: 15px;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-left: 15px;
   text-align: center;
   color: #E0FBFC;
   font-family: 'Arima', cursive;
@@ -257,6 +309,22 @@
   background-color: #F4A28D;
   padding: 5px;
   margin-top: 10px;
+}
+
+#body #ProximasPeliculas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  color: #E0FBFC;
+  margin-top: -20px;
+  font-family: 'Arima', cursive;
+  margin-left: -80px;
 }
 
 #body #ultimaPeli {

@@ -3,7 +3,8 @@
     {
         "nombre": "Aquaman 2",
         "categoria": "Suspenso",
-        "plataforma": "./img/prime-video.png",
+        "plataforma":"Prime Video",
+        "imagenPlataforma": "./img/prime-video.png",
         "descripcion": "Aquaman forja una alianza incómoda con un aliado poco probable para salvar a Atlantis y al resto del planeta de la muerte inminente.",
         "imagen": "./img/acuaman.jpg",
         "id": 1
@@ -11,7 +12,8 @@
     {
         "nombre": "Guardianes de la Galaxia Vol 3",
         "categoria": "Aventura",
-        "plataforma": "./img/prime-video.png",
+        "plataforma": "Prime Video",
+        "imagenPlataforma": "./img/prime-video.png",
         "descripcion": "Guardianes de la Galaxia vol. 3 es una próxima película de superhéroes estadounidense basada en el equipo de superhéroes Guardianes de la Galaxia, perteneciente a Marvel Comics.",
        "imagen": "./img/after.jpg",
         "id": 2
@@ -19,7 +21,8 @@
     {
         "nombre": "Spider-Man: Across the Spider-Verse",
         "categoria": "Acción",
-        "plataforma": "./img/HBO-Max-Logo.png",
+        "plataforma": "HBO",
+        "imagenPlataforma": "./img/HBO-Max-Logo.png",
         "descripcion": "Spider-Man: Across the Spider-Verse es una próxima película estadounidense de superhéroes animada basada en el personaje de Marvel Comics, Miles Morales / Spider-Man, producida por Columbia Pictures y Sony Pictures Animation en asociación con Marvel y distribuida por Sony Pictures Releasing.",
         "imagen": "./img/ambiciom.jpg",
        "id": 3
@@ -27,7 +30,8 @@
     {
         "nombre": "Mision Imposible",
         "categoria": "Acción",
-        "plataforma": "./img/prime-video.png",
+        "plataforma": "Prime Video",
+        "imagenPlataforma": "./img/prime-video.png",
         "descripcion": "Mission: Impossible Dead Reckoning Part One es una próxima película de espías y acción estadounidense a estrenar en 2023, protagonizada por Tom Cruise, quien repite su papel de Ethan Hunt, y escrito y dirigido por Christopher McQuarrie.",
         "imagen": "./img/laCasaGucci.jpg",
         "id": 4
@@ -35,7 +39,8 @@
     {
         "nombre": "Pinocchio",
         "categoria": "infantil",
-        "plataforma": "./img/netflix.png",
+        "plataforma":"Netflix",
+        "imagenPlataforma": "./img/netflix.png",
         "descripcion": "En Italia, el deseo de un hombre le da vida mágicamente a un muñeco de madera.",
         "imagen": "./img/Moonfall.jpg",
         "id": 5
@@ -43,7 +48,8 @@
     {
         "nombre": "Shazam!",
         "categoria": "Comedia",
-        "plataforma": "./img/prime-video.png",
+        "plataforma":"Prime Video",
+        "imagenPlataforma": "./img/prime-video.png",
         "descripcion": "Shazam! Fury of the Gods es una próxima película de superhéroes estadounidense basada en el personaje de DC Comics, Shazam. Producida por New Line Cinema, DC Films, The Safran Company y Mad Ghost Productions, y distribuida por Warner Bros. Pictures, pretende ser la secuela de ¡Shazam!",
         "imagen": "./img/mohana.jpg",
         "id": 6
