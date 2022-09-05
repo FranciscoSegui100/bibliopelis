@@ -80,6 +80,7 @@ const EliminarFiltros = () =>{
             <img src="${peliculaRandom.imagenPlataforma}" width="100"/>
             <input type="button" value="Ver" id="${peliculaRandom.id}">
             </div>`
+            redireccion()
     }
     const queVer = document.getElementById("queVer").addEventListener("click", () => {
         clickEnQueVer()
@@ -101,9 +102,10 @@ const EliminarFiltros = () =>{
                 <input type="button" value="Click aquí para ver" id="${peli.id}" class="id">
                 </div>`
                 }
-        
-                
-                peliculas.forEach((peli) => {
+                redireccion()
+        }  
+        const redireccion = () => {
+            peliculas.forEach((peli) => {
                 document.getElementById(peli.id).addEventListener('click', () => {
                     localStorage.setItem(" ",JSON.stringify(peli.nombre))
                   
@@ -121,7 +123,8 @@ const EliminarFiltros = () =>{
                     }
                 })
             })
-        }  
+        }
+
         const cargarProximasPeliculas = () => {
             EliminarFiltros();
             
@@ -157,19 +160,17 @@ const cargarEventosALosFiltros = () => {
                 const eliminarEstrenos = document.getElementById("ProximasPeliculas")
                 eliminarEstrenos.innerHTML = " "
             })
+            
         })
     }
 }
 const ultimaPeliVista = () => {
     
     const pelisVistas = document.getElementById("ultimaPeli")
-        if (localStorage !== " "){
-            pelisVistas.innerHTML = " "
-        }else{
             pelisVistas.innerHTML= `<div id="ultimaPeli"><h2>¿Que te parecio la ultima peli vista?</h2>
             <h2>${JSON.stringify(localStorage)}</h2><a href="https://www.sensacine.com/peliculas/criticas-sensacine/" target="_blank"><b><h2>Valorar Aquí </h2></b></div>`
-        }
     }
+    
 
  const cargarEventosAPlataformas = () => {
        const inputsDePlatamorfa = document.getElementsByClassName('filtrarPorPlataforma')
@@ -204,26 +205,25 @@ const filtrarPorPlataforma = (plataforma) => {
             <input type="button" value="Click aquí para ver" id="${peli.id}" class="id">
         </div>`
         }
+        redireccion()
 }
 const filtrarPorCategoria = (categoria) => {
     const filtrado = document.getElementById('filtrado')
-
-    EliminarFiltros();
+    filtrado.innerHTML = ''
     
     const pelisFiltradas = peliculas.filter((peli) => peli.categoria.toLowerCase() === categoria.toLowerCase())
 
-    if (pelisFiltradas.length > 0) {
-        for (const peli of pelisFiltradas) {
-
-            filtrado.innerHTML += `<div class="peli1"><img src="${peli.imagen}" alt="pel1" class="img1">
-            <b><h3 class="h3">${peli.nombre}</h3></b>
-            <p>${peli.descripcion}</p>
-            <div class="plataformas">
-            <img src="${peli.imagenPlataforma}" width="100"/>
-            <input type="button" value="Click aquí para ver" id="${peli.id}" class="id"></input>
-        </div>`
-        }
-    }  
+    for (const peli of pelisFiltradas) {
+            
+        filtrado.innerHTML += `<div class="peli1"><img src="${peli.imagen}" alt="pel1" class="img1">
+        <b><h3 class="h3">${peli.nombre}</h3></b>
+        <p>${peli.descripcion}</p>
+        <div class="plataformas">
+        <img src="${peli.imagenPlataforma}" width="100"/>
+        <input type="button" value="Click aquí para ver" id="${peli.id}" class="id">
+    </div>`
+    }
+    redireccion()
 }
 const ProxPelis = document.getElementById("proxPelis").addEventListener("click", () => {
     cargarProximasPeliculas()
